@@ -1,0 +1,22 @@
+.drivers-container span {
+  font-weight: 100;
+}
+
+.drivers-container article {
+  max-width: 700px;
+  margin: 20px auto 0;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.drivers-container h2 {
+  color: rgb(204, 204, 38);
+  font-size: 30px;
+}
+
+.drivers-container p {
+  font-weight: bolder;
+  color: #666;
+}
