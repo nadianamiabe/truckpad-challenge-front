@@ -1,5 +1,5 @@
-import React from "react";
-import "./Drivers.css";
+import React from 'react'
+import './Drivers.css'
 
 function Drivers(props) {
   return (
@@ -29,10 +29,18 @@ function Drivers(props) {
           <p>
             CPF: <span>{driver.documents[1].number}</span>
           </p>
+          <div className="button">
+            <button type="button" onClick={() => props.deleteOne(driver._id)}>
+              Deletar
+            </button>
+            <button type="button" onClick={() => props.editOne(driver)}>
+              Editar
+            </button>
+          </div>
         </article>
       ))}
     </div>
-  );
+  )
 }
 
-export default Drivers;
+export default Drivers

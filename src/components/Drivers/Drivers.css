@@ -1,3 +1,10 @@
+.drivers-container {
+  max-width: 500px;
+  margin: 25px auto 0;
+  padding: 0 25px;
+  text-align: initial;
+}
+
 .drivers-container span {
   font-weight: 100;
 }
@@ -6,9 +13,9 @@
   max-width: 700px;
   margin: 20px auto 0;
   padding: 20px;
-  background: #fff;
+  background: rgb(247, 244, 244);
   border-radius: 5px;
-  border: 1px solid #ddd;
+  border: 1px solid rgb(201, 197, 197);
 }
 
 .drivers-container h2 {
@@ -19,4 +26,9 @@
 .drivers-container p {
   font-weight: bolder;
   color: #666;
+}
+
+.button {
+  display: flex;
+  justify-content: baseline;
 }
