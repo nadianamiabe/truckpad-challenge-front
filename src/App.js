@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { BrowserRouter, Route, Link, Switch, Redirect } from 'react-router-dom'
+import { BrowserRouter, Route, Link, Switch } from 'react-router-dom'
 import Button from './components/Button/Button'
 import '../node_modules/antd/dist/antd.css'
 import 'antd/dist/antd.css'
@@ -105,7 +105,6 @@ function App() {
             path="/new-driver"
             render={props => <AddDriver addNewDriver={addNewDriver} />}
           />
-          <Redirect path="/" />
         </Switch>
       </div>
     </BrowserRouter>

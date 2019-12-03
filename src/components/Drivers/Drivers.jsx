@@ -3,10 +3,10 @@ import './Drivers.css'
 
 function Drivers(props) {
   return (
-    <div>
+    <div className="drivers-container">
       {props.drivers.map(driver => (
         // eslint-disable-next-line no-unused-expressions
-        <article key={driver._id} className="drivers-container">
+        <article key={driver._id}>
           <h2>{driver.name}</h2>
           <p>
             Telefone: <span>{driver.phone}</span>

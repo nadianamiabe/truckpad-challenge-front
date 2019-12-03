@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './AddDriver.css'
 import { Link } from 'react-router-dom'
-
+import { Input, Button } from 'antd'
 function AddDriver(props) {
   const initialState = {
     id: null,
@@ -48,8 +48,7 @@ function AddDriver(props) {
       >
         <div class="form-group">
           <label>Nome:</label>
-
-          <input
+          <Input
             type="text"
             name="name"
             value={driver.name}
@@ -60,7 +59,7 @@ function AddDriver(props) {
 
         <div class="form-group">
           <label>Data de Nascimento:</label>
-          <input
+          <Input
             type="date"
             name="birthDate"
             value={driver.birthDate}
@@ -70,23 +69,23 @@ function AddDriver(props) {
         </div>
         <div class="form-group">
           <label>Telefone:</label>
-          <input type="text" name="phone" value={driver.phone} onChange={handleChange} />
+          <Input type="text" name="phone" value={driver.phone} onChange={handleChange} />
         </div>
         <div class="form-group">
           <label>Cidade:</label>
-          <input type="text" name="city" value={driver.city} onChange={handleChange} />
+          <Input type="text" name="city" value={driver.city} onChange={handleChange} />
         </div>
         <div class="form-group">
           <label>Estado:</label>
-          <input type="text" name="state" value={driver.state} onChange={handleChange} />
+          <Input type="text" name="state" value={driver.state} onChange={handleChange} />
         </div>
         <div class="form-group">
           <label>CNH:</label>
-          <input type="text" name="cnhNumber" value={driver.cnhNumber} onChange={handleChange} />
+          <Input type="text" name="cnhNumber" value={driver.cnhNumber} onChange={handleChange} />
         </div>
         <div class="form-group">
           <label>Categoria</label>
-          <input
+          <Input
             type="text"
             name="cnhCategory"
             value={driver.cnhCategory}
@@ -95,9 +94,9 @@ function AddDriver(props) {
         </div>
         <div class="form-group">
           <label>CPF</label>
-          <input type="text" name="cpfNumber" value={driver.cpfNumber} onChange={handleChange} />
+          <Input type="text" name="cpfNumber" value={driver.cpfNumber} onChange={handleChange} />
         </div>
-        <button type="submit">Salvar</button>
+        <Button type="submit">Salvar</Button>
       </form>
       <Link to="/">Voltar</Link>
     </div>
